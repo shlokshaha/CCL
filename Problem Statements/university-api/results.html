@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-item: center;
+    }
+    #universityResults {
+      background-color: #7ccd9d;
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      padding: 30px;
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+      margin-top: 10%;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>University Information</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="http://localhost:8080/" style="text-decoration: none">
+      <h3>Back</h3>
+    </a>
+    <div id="universityResults">
+      <table>
+        <tr>
+          <th>
+            <h3>Country Code :</h3>
+          </th>
+          <th>
+            <h3>{{ code }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Country :</h3>
+          </th>
+          <th>
+            <h3>{{ country }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Name of university:</h3>
+          </th>
+          <th>
+            <h3>{{ name }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Any domains if present:</h3>
+          </th>
+          <th>
+            <h3>{{ domains }}</h3>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
